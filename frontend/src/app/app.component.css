@@ -1,0 +1,19 @@
+/* Global styles for navbar and footer */
+.navbar {
+    background-color: #f8f9fa;
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  footer a {
+    color: white;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    color: #007bff;
+  }
+  
