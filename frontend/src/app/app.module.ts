@@ -1,19 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app.routes'; // Ensure the path is correct
+import { RouterModule } from '@angular/router'; // Ensure this is imported
+
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { AppRoutingModule } from './app-routing.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule // Import your routing module here
+    LoginComponent,SignupComponent,AppRoutingModule,RouterModule,HomeComponent
+    
+    // Import here
   ],
   providers: [],
   bootstrap: [AppComponent]

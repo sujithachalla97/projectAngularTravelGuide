@@ -1,10 +1,16 @@
 import { Routes } from '@angular/router';
-import { SignupComponent } from './signup/signup.component';
+import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
-export const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
-  { path: 'signup', component: SignupComponent },
-  { path: '**', redirectTo: 'signup' } // Handle invalid routes
+
+
+// Define the routes for your components
+export const appRoutes: Routes = [
+    { path: 'home', component: HomeComponent }, 
+    { path: '', component: HomeComponent }, 
+    { path: 'login', component: LoginComponent }, 
+    { path: 'signup', component: SignupComponent }, 
+     // Default route
+    
 ];

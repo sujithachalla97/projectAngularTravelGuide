@@ -1,1 +1,26 @@
+<nav class="nav">
+  <div class="nav-logo">
+      <a [routerLink]="['/home']"><p>Travel Guide</p></a>
+  </div>
+  <div class="nav-menu" id="navMenu">
+      <ul>
+          <li><a [routerLink]="['/home']" class="link">Home</a></li>
+          <li><a href="#" class="link">Bookings</a></li>
+          <li><a href="#" class="link">Destination</a></li>
+          <li><a href="#" class="link">My Trip</a></li>
+          <li><a href="#" class="link">Feedback</a></li>
+      </ul>
+  </div>
+  <div class="nav-button">
+      <a [routerLink]="['/login']" class="Sign-in">Login</a>
+   <a [routerLink]="['/signup']" class="Sign-up">Sign Up</a>
+</div>
+
+  <div class="nav-menu-btn">
+      <i class="bx bx-menu"></i>
+  </div>
+</nav>
+
+
+
 <router-outlet></router-outlet>

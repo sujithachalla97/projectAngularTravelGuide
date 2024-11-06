@@ -1,0 +1,429 @@
+/* You can add global styles to this file, and also import other style files */
+@layer library, reset, base, components;
+@import 'https://unpkg.com/open-props@beta.5' layer(library);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+.hero {
+   
+    background-size: cover;
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .about {
+    background-color: #f9f9f9;
+  }
+  
+  footer {
+    background-color: #343a40;
+  }
+    /* Custom Navbar Styles */
+    .navbar-nav .nav-link {
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+    
+      .navbar-nav .nav-link:hover {
+        color: #f39c12; /* Change color on hover */
+        transform: translateY(-2px); /* Subtle lift effect */
+      }
+    
+      .navbar-brand {
+        font-family: 'Arial', sans-serif; /* Custom font */
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+    
+      .btn-light {
+        background-color: #f39c12; /* Bright button color */
+        border: none; /* Remove border */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+      }
+    
+      .btn-light:hover {
+        background-color: #d68910; /* Darken button on hover */
+      }
+    
+      /* Add some spacing for better responsiveness */
+      @media (max-width: 768px) {
+        .navbar-nav .nav-item {
+          margin: 0.5rem 0; /* Spacing for mobile view */
+        }
+      }
+  /* Hero Section Styles */
+.hero {
+    position: relative; /* Set position for absolute overlay */
+    background: rgb(81,2,134);
+    background: linear-gradient(90deg, rgba(81,2,134,1) 0%, rgba(164,4,4,1) 68%, rgba(252,176,69,1) 100%);
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    position: relative; /* Position for overlay */
+    color: rgb(88, 5, 5); /* White text color */
+    text-align: center; /* Center text */
+}
+
+/* Overlay for better readability */
+
+
+/* Hero Text Styles */
+.hero h1 {
+    font-size: 3.5rem; /* Large font size */
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Larger font size for the paragraph */
+    animation: fadeIn 1.5s ease-in; /* Fade-in animation */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #ff4081; /* Attractive button color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.btn-primary:hover {
+    background-color: #e91e63; /* Darker shade on hover */
+}
+
+.popular-destinations {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 50px 0;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Raise card on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.card img {
+    border-radius: 0.5rem 0.5rem 0 0; /* Rounded top corners */
+}
+
+.card-title {
+    font-weight: bold; /* Bold title */
+    font-size: 1.25rem; /* Larger font size */
+}
+
+.card-text {
+    color: #6c757d; /* Subtle text color */
+}
+.about {
+    position: relative;
+    overflow: hidden; /* Prevents any overflow from child elements */
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for better text visibility */
+    z-index: 1; /* Place it below the text */
+}
+
+.about .container {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the overlay */
+}
+
+.about h2 {
+    font-family: 'Montserrat', sans-serif; /* Choose a unique font */
+    font-weight: 700; /* Bold for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for text depth */
+}
+
+.about p {
+    font-size: 1.25rem; /* Larger font size for readability */
+    line-height: 1.6; /* Spacing between lines */
+}
+
+.about .btn {
+    border-radius: 25px; /* Rounded button edges */
+    padding: 10px 30px; /* More padding for larger buttons */
+    transition: background 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.about .btn:hover {
+    background: #fff; /* Change background on hover */
+    color: #2575fc; /* Change text color on hover */
+}
+footer {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 40px 20px; /* Add padding around the footer */
+}
+
+.footer-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Evenly space columns */
+    max-width: 1200px; /* Max width for better alignment */
+    margin: 0 auto; /* Center the footer container */
+}
+
+.col-3 {
+    flex: 1; /* Allow columns to grow equally */
+    margin: 0 15px; /* Add horizontal space between columns */
+}
+
+.footer-logo {
+    max-width: 100%; /* Ensure the logo is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h6 {
+    margin-bottom: 10px; /* Space between heading and content */
+}
+
+.social a {
+    margin: 0 5px; /* Space out social icons */
+    font-size: 18px; /* Adjust icon size */
+}
+
+.address, .copyright {
+    display: block; /* Ensure proper spacing for address and copyright */
+    margin-top: 10px;
+}
+
+.copyright {
+    text-align: center; /* Center copyright text */
+    padding: 10px 0; /* Add padding for separation */
+    border-top: 1px solid #ddd; /* Optional border for separation */
+}
+
+@layer base {
+  :root {
+    font-family: 'Inter', sans-serif;
+    /* Open Props - oklch colors v2 config */
+    /* https://codepen.io/argyleink/pen/eYxJJbr */
+
+    --palette-hue: 14;
+    --palette-hue-rotate-by: 0;
+    --palette-chroma: 0;
+
+    --brand-1: oklch(0.6 0.24 var(--palette-hue));
+    --brand-2: oklch(93% 0.13 117);
+    --sm-font-size: 0.875rem;
+  }
+  body {
+    min-block-size: 100dvb;
+    background-color: white;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    display: grid;
+    place-items: center;
+  }
+}
+
+@layer components {
+
+ 
+
+  .wrapper {
+    display: grid;
+    gap: var(--size-7);
+  }
+
+  .heading-2 {
+    font-size: var(--font-size-5);
+    @media (width >= 768px) {
+      font-size: var(--font-size-6);
+    }
+  }
+
+  .highlight {
+    color: var(--brand-1);
+  }
+
+  .content {
+    display: grid;
+    gap: var(--size-7);
+
+    @media (width >= 1024px) {
+      grid-template-columns: 44ch 1fr;
+    }
+  }
+
+  .main-card {
+    display: grid;
+    gap: var(--size-3);
+    background-color: var(--brand-2);
+    font: inherit;
+    color: inherit;
+    padding: var(--size-6);
+    border-radius: var(--radius-3);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+    @media (width >= 1024px) {
+      grid-template-rows: 1fr min-content;
+    }
+
+    @media (768px <= width < 1024px) {
+      grid-template-columns: 260px 1fr;
+    }
+  }
+
+  .main-card-visual {
+    container-type: size;
+    inline-size: 100%;
+    @media (width < 1024px) {
+      block-size: 218px;
+    }
+  }
+
+  .main-card-image {
+    object-fit: contain;
+    inline-size: 100%;
+    block-size: 100%;
+    border-radius: inherit;
+
+    transition: scale 0.3s var(--ease-1);
+    &:hover {
+      scale: 1.07;
+    }
+  }
+
+  .meta {
+    display: grid;
+    gap: var(--size-5);
+  }
+
+  .heading-1 {
+    font-size: var(--font-size-5);
+    max-inline-size: var(--size-content-1);
+    text-wrap: balance;
+    @media (width >= 768px) {
+      font-size: var(--font-size-6);
+    }
+  }
+
+  .controls {
+    display: grid;
+    place-items: center start;
+  }
+
+  .button-link {
+    display: inline-grid;
+    place-items: center;
+    text-align: center;
+    font-weight: var(--font-weight-7);
+    font-size: var(--sm-font-size);
+    background-color: black;
+    padding-inline: var(--size-3);
+    color: white;
+    padding-block: var(--size-4);
+    border-radius: var(--radius-4);
+    transition: background-color 0.2s var(--ease-1);
+    &:not(:active):hover {
+      background-color: var(--color-13);
+    }
+    @media (width >= 1024px) {
+      font-size: var(--font-size-1);
+    }
+  }
+  .cards {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: var(--size-7);
+  }
+
+  .card {
+    display: grid;
+    gap: var(--size-7);
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @media (width >= 768px) {
+      grid-template-columns: min-content 1fr;
+    }
+  }
+
+  .padding-end {
+    padding-block-end: 2.5rem;
+    border-bottom: var(--border-size-1) solid var(--color-3);
+  }
+
+  .card-visual {
+    border-radius: var(--radius-3);
+    overflow: clip;
+    block-size: 218px;
+    inline-size: 100%;
+    @media (width >= 768px) {
+      block-size: 135px;
+      inline-size: 194px;
+    }
+  }
+
+  .card-image {
+    object-fit: cover;
+    inline-size: 100%;
+    block-size: 100%;
+    border-radius: inherit;
+    transition: scale 0.2s var(--ease-1);
+    &:hover {
+      scale: 1.07;
+    }
+  }
+
+  .heading-3 {
+    font-size: var(--font-size-4);
+    text-wrap: pretty;
+    @media (768px <= width <= 1024px) {
+      max-inline-size: 25ch;
+    }
+  }
+}
+
+@layer reset {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  :where(:not(dialog)) {
+    margin: 0;
+  }
+
+  :where(img, svg, video, canvas, audio, iframe, embed, object) {
+    display: block;
+  }
+
+  :where(img, svg, video) {
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+
+  :where(input, button, textarea, select) {
+    font: inherit;
+  }
+
+  :where(html) {
+    -webkit-text-size-adjust: none; /* https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/ */
+    @media (prefers-reduced-motion: no-preference) {
+      scroll-behavior: smooth;
+    }
+  }
+}
