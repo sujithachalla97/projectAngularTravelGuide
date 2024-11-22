@@ -1,11 +1,19 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
+import connectToMongoDB from "./db/db.connect.js";
+import authRoutes from "./routes/auth.routes.js";
+import hotelRoutes from "./routes/hotel.routes.js";
 const app = express();
 
 dotenv.config();
-app.use(cookieParser);
+app.use(express.json());
+app.use(cookieParser());
 
-app.listen(5000,()=>{
-    console.log("Listening on port 5000");
-})
+app.use('/api/auth', authRoutes);
+app.use('/api/hotels',hotelRoutes)
+
+app.listen(3000, ()=>{
+    connectToMongoDB();
+    console.log("Listening on port 3000");
+});
