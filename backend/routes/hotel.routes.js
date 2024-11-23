@@ -1,5 +1,5 @@
 import express from "express"
-import { createHotel, deleteHotel, getAllHotels, updateHotel, getHotelById } from "../controllers/hotel.controller"
+import { createHotel, deleteHotel, getAllHotels, updateHotel, getHotelById } from "../controllers/hotel.controller.js"
 
 const router = express.Router()
 
@@ -9,4 +9,4 @@ router.get("/hotels/:id", getHotelById);
 router.put("/hotels/:id", updateHotel);
 router.delete("/hotels/:id", deleteHotel);
 
-export default hotel_routes;
+export default router;
