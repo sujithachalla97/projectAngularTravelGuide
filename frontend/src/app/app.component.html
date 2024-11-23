@@ -1,29 +1,28 @@
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">ExploreNest</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item mx-2"><a class="nav-link" [routerLink]="['/home']">Home</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" >Destinations</a></li>
-        <li class="nav-item mx-2"><a class="nav-link">About</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" >Contact</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" >Booking</a></li>
-        <li>
-          <a [routerLink]="['/login']" class="nav-link">Login</a>
-        </li>
-        <li>
-          <a [routerLink]="['/signup']" class="nav-link">Sign Up</a>
-        </li>
-
+<nav class="nav">
+  <div class="nav-logo">
+      <a [routerLink]="['/home']"><p>Travel Guide</p></a>
+  </div>
+  <div class="nav-menu" id="navMenu">
+      <ul>
+          <li><a [routerLink]="['/home']" class="link">Home</a></li>
+          <li><a href="#" class="link">Bookings</a></li>
+          <li><a href="#" class="link">Destination</a></li>
+          <li><a [routerLink]="['/dashboard']" class="link">Dashboard</a></li>
+          <li><a href="#" class="link">My Trip</a></li>
+          <li><a href="#" class="link">Feedback</a></li>
+          
       </ul>
-    </div>
+  </div>
+  <div class="nav-button">
+      <a [routerLink]="['/login']" class="Sign-in">Login</a>
+   <a [routerLink]="['/signup']" class="Sign-up">Sign Up</a>
+</div>
+
+  <div class="nav-menu-btn">
+      <i class="bx bx-menu"></i>
   </div>
 </nav>
 
 
-<!-- ROUTER OUTLET TO LOAD COMPONENTS -->
+
 <router-outlet></router-outlet>
