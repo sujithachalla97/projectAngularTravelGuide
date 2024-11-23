@@ -1,1 +1,78 @@
-<p>booking works!</p>
+<!DOCTYPE html>
+<html lang="en" ng-app="bookingApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majestic Hotel Booking Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body ng-controller="BookingController as bookingCtrl">
+
+    <div class="booking-container">
+        <h1 class="title">Hotel Booking Form</h1>
+
+        <div class="form-container">
+            <div class="reservation">
+                <h2>Make A Reservation</h2>
+                <form ng-submit="bookingCtrl.checkAvailability()">
+                    <div class="form-group">
+                        <label>Check-In Date</label>
+                        <input type="date" ng-model="bookingCtrl.checkInDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Check-Out Date</label>
+                        <input type="date" ng-model="bookingCtrl.checkOutDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Guest</label>
+                        <input type="number" ng-model="bookingCtrl.guest" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Rooms</label>
+                        <input type="number" ng-model="bookingCtrl.rooms" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Room Preference</label>
+                        <select ng-model="bookingCtrl.roomPreference" required>
+                            <option value="tv">TV</option>
+                            <option value="ac">AC</option>
+                            <option value="balcony">Balcony</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>No Of Children</label>
+                        <input type="number" ng-model="bookingCtrl.children" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" ng-model="bookingCtrl.firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" ng-model="bookingCtrl.lastName" required>
+                    </div>
+                    <button type="submit" class="check-btn">Check Availability</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p><strong>Phone:</strong> 1800-987456321</p>
+                <p><strong>Email:</strong> infosysspringboard&#64;infosys.com</p>
+                
+                <h3>CITY BREAK</h3>
+                <p>HOTEL: LAS VEGAS CLASSIC ROOM, 1 SINGLE BED</p>
+                <p>CHECK-IN: SUNDAY 08 JUNE 2024 FROM 15:00</p>
+                <p>CHECK-OUT: MONDAY 10 JUNE 2024 FROM 12:00</p>
+                <p><strong>₹1500 / 2days</strong></p>
+            </div>
+        </div>
+        
+        <footer>&copy; 2024 Hotel Booking Form. All Rights Reserved Designed by sachin</footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
