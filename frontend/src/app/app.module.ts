@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HotelsComponent } from './hotels/hotels.component';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -18,10 +20,11 @@ import { AppRoutingModule } from './app-routing.module';
     LoginComponent,
     SignupComponent,
     DashboardComponent,
+    HotelsComponent, CommonModule
   ],
   imports: [
     BrowserModule,
-    LoginComponent,SignupComponent,AppRoutingModule,RouterModule,HomeComponent
+    LoginComponent,SignupComponent,AppRoutingModule,RouterModule,HomeComponent,HotelsComponent,CommonModule
     
     // Import here
   ],

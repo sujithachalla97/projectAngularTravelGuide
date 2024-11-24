@@ -5,6 +5,7 @@ import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BookingComponent } from './booking/booking.component';
 import { AuthGuard } from './gaurds/auth.gaurd';
+import { HotelsComponent } from './hotels/hotels.component';
 
 export const appRoutes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,5 +14,6 @@ export const appRoutes: Routes = [
     { path: 'signup', component: SignupComponent }, 
     { path: 'booking', component: BookingComponent, canActivate: [AuthGuard] },
     { path: 'dashboard', component: DashboardComponent },
-    { path: '**', redirectTo: '/home' }
+    { path: 'hotels', component: HotelsComponent },
+   
 ];
