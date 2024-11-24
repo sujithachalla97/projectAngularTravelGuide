@@ -31,7 +31,11 @@ body {
     line-height: 100px;
     background: linear-gradient(rgba(39,39,39, 0.6), transparent);
     z-index: 100;
+    transition: 1s;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 }
+
 
 .nav-logo p{
     color: white;
@@ -55,6 +59,7 @@ body {
 .link:hover, .active{
     border-bottom: 2px solid #fff;
 }
+
 .nav-button .Sign-up,
 .nav-button .Sign-in {
     cursor: pointer;

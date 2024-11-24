@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
-    background: url('/Image.jpg') no-repeat center center fixed;
+    background: url('/background.jpg') no-repeat center center fixed;
     background-size: cover;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
@@ -19,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 110vh;
+    margin: 50px 0 0 0;
     background: rgba(39, 39, 39, 0.4);
 }
 .nav {
