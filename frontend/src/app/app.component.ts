@@ -1,14 +1,10 @@
-import { Component, HostListener } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
-import { HotelsComponent } from './hotels/hotels.component';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,RouterModule,LoginComponent,SignupComponent,HotelsComponent,HomeComponent],
+  imports: [RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

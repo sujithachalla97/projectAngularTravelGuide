@@ -26,8 +26,26 @@ export class AuthService {
     return !!user && !!token;
   }
 
-  login(credentials: { email: string; password: string }): Observable<any> {
-    return this.http.post(`${this.baseUrl}/login`, credentials);
+  async login(credentials: { email: string; password: string }): Promise<any> {
+      try {
+        const response = await fetch(`${this.baseUrl}/auth/login`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(credentials),
+          credentials: 'include'
+        });
+  
+        if (!response.ok) {
+          throw new Error(`Login failed: ${response.statusText}`);
+        }
+  
+        return await response.json();
+      } catch (error) {
+        console.error('Login error:', error);
+        throw error;
+      }
   }
 
   signup(data: { firstName: string; lastName: string; email: string; password: string, confirmPassword: string, gender: string, phone: string }): Observable<any> {

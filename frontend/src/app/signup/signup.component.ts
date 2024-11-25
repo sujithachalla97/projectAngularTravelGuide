@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import { LoginComponent } from '../login/login.component';
+import { Component, NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-signup',
   standalone: true,
-  imports: [LoginComponent],
+  imports: [FormsModule],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css'
 })
