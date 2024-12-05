@@ -1,27 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+<body>
 <nav class="nav">
-  <div class="nav-logo">
+    <div class="nav-logo">
       <a [routerLink]="['/home']"><p>Travel Guide</p></a>
-  </div>
-  <div class="nav-menu" id="navMenu">
+    </div>
+    
+  
+  
+    <div class="nav-menu" id="navMenu">
       <ul>
-          <li><a [routerLink]="['/home']" class="link">Home</a></li>
-          <li><a   class="link" >Bookings</a></li>
-          <li><a href="#" class="link">Destination</a></li>
-          <li><a [routerLink]="['/dashboard']" class="link">Dashboard</a></li>
-          <li><a href="#" class="link">My Trip</a></li>
-          <li><a href="#" class="link">Feedback</a></li>
-          <li><a [routerLink]="['/hotels']" class="link">Hotels</a></li>
-          
+        <li><a [routerLink]="['/home']" class="link">Home</a></li>
+        <li><a [routerLink]="['/booking']" class="link">Bookings</a></li>
+        <li><a [routerLink]="['/destinations']" class="link">Destination</a></li>
+        <li><a [routerLink]="['/dashboard']" class="link">Dashboard</a></li>
+        <li><a [routerLink]="['/trip-details']"  class="link">My Trip</a></li>
+        <li><a [routerLink]="['/feedback']" class="link">Feedback</a></li>
+        <li><a [routerLink]="['/hotels']" class="link">Hotels</a></li>
       </ul>
-  </div>
-  <div class="nav-button">
+    </div>
+    <div class="nav-search">
+        <input type="text" placeholder="Search..." class="search-bar">
+        <button class="mic-btn">
+          <i class="bx bxs-microphone"></i>
+        </button>
+      </div>
+  
+    <div class="nav-button">
       <a [routerLink]="['/login']" class="Sign-in">Login</a>
-   <a [routerLink]="['/signup']" class="Sign-up">Sign Up</a>
-</div>
-
-  <div class="nav-menu-btn">
+      <a [routerLink]="['/signup']" class="Sign-up">Sign Up</a>
+    </div>
+  
+    <div class="nav-menu-btn">
       <i class="bx bx-menu"></i>
-  </div>
-</nav>
-
-<router-outlet></router-outlet>
+    </div>
+  </nav>
+  
+  <router-outlet></router-outlet>
+     
+  </body>
+  </html>
+  

@@ -13,7 +13,74 @@ body {
     margin: 0;
     padding: 0;
 }
+body, html {
+  overflow: auto;
+}
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  .nav-search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .search-bar {
+    width: 200px;
+    height: 36px;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .search-bar:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+  }
+  
+  .mic-btn {
+    background-color: #007bff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .mic-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .mic-btn i {
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-search {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .search-bar {
+      width: 80%;
+    }
+  }
+  
 .wrapper{
     display: flex;
     justify-content: center;

@@ -1,1 +1,34 @@
-<p>feedback works!</p>
+<body>
+  <div class="wrapper">
+    <form class="feedback-form">
+      <header>We Value Your Feedback!</header>
+      <p>Help us improve your travel experience by sharing your thoughts.</p>
+
+      <div class="input-box">
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      </div>
+
+      <div class="input-box">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="input-box">
+        <select id="rating" name="rating">
+          <option value="" disabled selected>Rate Your Experience</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+      </div>
+
+      <div class="input-box">
+        <textarea id="comments" name="comments" rows="4" placeholder="Share your experience with us..."></textarea>
+      </div>
+
+      <div class="input-box">
+        <input type="submit" class="submit" value="Submit Feedback">
+      </div>
+    </form>
+  </div>
+</body>
