@@ -1,0 +1,42 @@
+# Node.js specific
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# Angular specific
+/.angular
+/.angular-cache
+/.angular-cli.json
+/.package-lock.json
+/.yarn.lock
+/dist/
+/coverage/
+/src/environments/environment*.ts
+/src/assets/**/*.key
+/src/assets/**/*.pem
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.vscode/
+.idea/
+
+# Build output
+/build/
+/out-tsc/
+/tmp/
+/temp/
+
+# Compiled TypeScript
+*.tsbuildinfo
+
+# Temporary folders
+/tmp
+/temp

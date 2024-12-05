@@ -1,0 +1,77 @@
+
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <h1>Dashboard</h1>
+      
+      <div class="user-profile">
+        <p>Monica</p>
+        <img src="Logo.png" alt="Admin Profile" />
+      </div>
+    </header>
+
+    <section class="statistics">
+      <div class="stat-card">
+        <h2>Completed Bookings</h2>
+        <p>125</p>
+      </div>
+      <div class="stat-card">
+        <h2>Active Bookings</h2>
+        <p>80</p>
+      </div>
+      <div class="stat-card">
+        <h2>Feedback</h2>
+        <p>50</p>
+      </div>
+      <div class="stat-card">
+        <h2>Total Revenue</h2>
+        <p>$15,000</p>
+      </div>
+    </section>
+
+    <section class="charts">
+      <div class="chart-card">
+        <h3>Bookings Over Time</h3>
+        <canvas id="bookingsChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Slot Availability</h3>
+        <canvas id="availabilityChart"></canvas>
+      </div>
+    </section>
+
+    <section class="tables">
+      <div class="table-card">
+        <h3>Recent Bookings</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>01-10-2023</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>01-15-2023</td>
+              <td>Pending</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-card">
+        <h3>User Feedback</h3>
+        <ul>
+          <li>Great experience! - John</li>
+          <li>Will visit again! - Jane</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>

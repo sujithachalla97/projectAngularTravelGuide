@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #87CEFA, #f9f9f9); 
+    color: #333;
+    min-height: 100vh;
+}
+
+
+header {
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 9rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+
+.container {
+    max-width: 1500px;
+    margin: 2rem auto;
+    padding: 3rem 3rem;
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+    gap: 1.5rem;
+}
+
+
+.destination-card {
+    background-color: rgba(240, 248, 255, 0.9); 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #87CEFA; 
+}
+
+.destination-card h3 {
+    margin: 1rem 0 0.5rem;
+    color: #4CAF50;
+    font-size: 1.5rem;
+}
+
+.destination-card p {
+    padding: 0 1rem 1rem;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,38 @@
+<body>
+    <div class="wrapper">
+       
+       <div class="form-box">
+        
+           <form (ngSubmit)="onLogin()" class="login-container" id="login">
+               <div class="top">
+                   
+                   <header>Login</header>
+               </div>
+               <div class="input-box">
+                   <input type="text" [(ngModel)]="email" name="email" class="input-field" placeholder="Username or Email">
+                   <i class="bx bx-user"></i>
+               </div>
+               <div class="input-box">
+                   <input type="password" [(ngModel)]="password" name="password" class="input-field" placeholder="Password">
+                   <i class="bx bx-lock-alt"></i>
+               </div>
+               <div class="input-box">
+                   <input type="submit" class="submit" value="Sign In">
+               </div>
+               <div class="top">
+                <span>Don't have an account? <a href="#">Sign Up</a></span>
+               </div>
+               
+               <div class="two-col">
+                   <div class="one">
+                       <input type="checkbox" id="login-check">
+                       <label for="login-check"> Remember Me</label>
+                   </div>
+                   <div class="two">
+                       <label><a href="#">Forgot password?</a></label>
+                   </div>
+               </div>
+            </form>
+        </div>
+    </div>
+</body>
