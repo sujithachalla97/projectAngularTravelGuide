@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
-    background: url('/Image.jpg') no-repeat center center fixed;
+    background: url('/background.jpg') no-repeat center center fixed;
     background-size: cover;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
@@ -149,7 +149,7 @@ body, html {
     height: 45px; 
     padding: 10px 30px;
 }
-.Sign-u{
+.Sign-up{
     cursor: pointer;
     color: #fff;
     text-decoration: none;

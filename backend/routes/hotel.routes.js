@@ -4,7 +4,7 @@ import { createHotel, deleteHotel, getAllHotels, updateHotel, getHotelById } fro
 const router = express.Router()
 
 router.post("/hotels", createHotel);
-router.get("/hotels", getAllHotels);
+router.get("/gethotels", getAllHotels);
 router.get("/hotels/:id", getHotelById);
 router.put("/hotels/:id", updateHotel);
 router.delete("/hotels/:id", deleteHotel);

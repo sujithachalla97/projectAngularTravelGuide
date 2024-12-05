@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #87CEFA, #f9f9f9); 
+    background: url('/Image.jpg') no-repeat center center fixed; 
     color: #333;
     min-height: 100vh;
 }

@@ -4,6 +4,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
+.link:hover, .active{
+  border-bottom: 2px solid #fff;
+  transform: scale(1.5);
+}
+
+.Sign-up,
+.Sign-in {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+  width: 130px;
+  height: 40px;
+  font-weight: 500;
+  margin: 1rem;
+  transition: 0.5;
+}
+.Sign-in:hover, .Sign-up:hover {
+  transform: scale(1.5);
+}
+/* .Sign-up{
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+} */
+
+
 .hero {
    
     background-size: cover;

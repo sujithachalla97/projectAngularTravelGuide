@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
-import { provideHttpClient } from '@angular/common/http';
+import { HttpClient, provideHttpClient, withFetch } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -35,8 +35,11 @@ import { DestinationsComponent } from './destinations/destinations.component';
     FormsModule,
     AppRoutingModule,
     CommonModule,
-    RouterModule
+    RouterModule,
   
+  ],
+  providers: [
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
 })
